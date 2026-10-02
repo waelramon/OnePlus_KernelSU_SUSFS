@@ -540,7 +540,7 @@ jobs:
             echo "> **⚠️ Android-Kernel Filter:** Only A15 and A16 devices will be built for \`${{ inputs.op_model }}\`" >> $GITHUB_STEP_SUMMARY
           elif [[ "${{ inputs.op_model }}" == "OP15+OP-PAD-3-SM8750" ]]; then
             echo "" >> $GITHUB_STEP_SUMMARY
-            echo "> **Two-device filter:** \`configs/a16/OP15.json\` (android16-6.12) and \`configs/a16/OP-PAD-3-SM8750.json\` (android15-6.6). The A15 pad config and \`OP-PAD-3-SM8750-6.6.89\` are not included." >> $GITHUB_STEP_SUMMARY
+            echo "> **Two-device filter:** \`configs/a16/OP-NORD-4.json\` (android16-6.12) and \`configs/a16/OP-PAD-3-SM8750.json\` (android15-6.6). The A15 pad config and \`OP-PAD-3-SM8750-6.6.89\` are not included." >> $GITHUB_STEP_SUMMARY
           fi
 
   mirror_toolchain:
