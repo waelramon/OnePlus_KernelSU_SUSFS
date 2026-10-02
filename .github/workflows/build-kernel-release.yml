@@ -156,7 +156,7 @@ jobs:
               jq_filter="map(select(.os_version == \"A14\"))"
               ;;
             OP15+OP-PAD-3-SM8750)
-              jq_filter="map(select((.model == \"OP15\" and .os_version == \"A16\") or (.model == \"OP-PAD-3-SM8750\" and .os_version == \"A16\")))"
+              jq_filter="map(select((.model == \"OP-NORD-4\" and .os_version == \"A16\") or (.model == \"OP-PAD-3-SM8750\" and .os_version == \"A16\")))"
               echo "ℹ️  Two-device filter: configs/a16/OP-NORD-4.json"
               ;;
             android*-*.*)
